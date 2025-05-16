@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    font-family: var(--font-normal);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+@font-face {
+    font-family: assistant-normal;
+    src: url(assets/fonts/assistant-normal.woff);
+}
+
+@font-face {
+    font-family: assistant-bold;
+    src: url(assets/fonts/assistant-bold.woff);
+}
+
+:root {
+    --main-padding: 1.5rem;
+    --font-normal: assistant-normal;
+    --font-bold: assistant-bold;
+}
+
+
+#homeSection {
+    padding: var(--main-padding);
+    gap: var(--main-padding);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+nav {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--main-padding);
+}
+
+nav>* {
+    height: 50%;
+}
+
+.nav {
+    width: 100%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.top {
+    display: flex;
+    align-items: flex-end;
+}
+
+.bottom {
+    display: flex;
+    align-items: flex-start;
+}
+
+.carousel {
+    width: 75%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+    position: absolute;
+}
+
+.menu__submenu {
+    padding: var(--main-padding);
+}
+
+.menu_item {
+    font-size: 12px;
+}
+
+.menu_item a:hover,
+.menu_item button:hover {
+    font-family: var(--font-bold);
+}
+
+.fade-in {
+    opacity: 1;
+    transition: all 5s;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: all 5s;
+}
